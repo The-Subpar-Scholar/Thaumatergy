@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2021.1.3\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\Thaumatergy.dir/objects.a
+C:\SDK\mingw64\bin\ar.exe cr CMakeFiles\Thaumatergy.dir/objects.a @CMakeFiles\Thaumatergy.dir\objects1.rsp
+C:\SDK\mingw64\bin\g++.exe -O3 -s -DDEBUG=2 -static -Wno-multichar -Wl,--image-base,0x190000 -shared -o ..\injector\Thaumatergy.dll -Wl,--out-implib,libThaumatergy.dll.a -Wl,--major-image-version,0,--minor-image-version,0 -Wl,--whole-archive CMakeFiles\Thaumatergy.dir/objects.a -Wl,--no-whole-archive @CMakeFiles\Thaumatergy.dir\linklibs.rsp
