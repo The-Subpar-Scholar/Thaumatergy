@@ -2,16 +2,19 @@
 #pragma once
 #include <cstdint>
 struct MapMimicryEstablishmentParam {
-    float RandomizerCoefficient0;
-    float RandomizerCoefficient1;
-    float RandomizerCoefficient2;
-    int TransformVfxId0;
-    int LoopVfxId0;
-    int DestroyVfxId0;
-    int TransformVfxId1;
-    int LoopVfxId1;
-    int DestroyVfxId1;
-    int TransformVfxId2;
-    int LoopVfxId2;
-    int DestroyVfxId2;
+    static const wchar_t* name;
+    struct data {                                                   
+        float RandomizerCoefficient0;                           
+        float RandomizerCoefficient1;                           
+        float RandomizerCoefficient2;                           
+        int TransformVfxId0;                                  
+        int LoopVfxId0;                                       
+        int DestroyVfxId0;                                    
+        int TransformVfxId1;                                  
+        int LoopVfxId1;                                       
+        int DestroyVfxId1;                                    
+        int TransformVfxId2;                                  
+        int LoopVfxId2;                                       
+        int DestroyVfxId2;                                    
+    };
 };

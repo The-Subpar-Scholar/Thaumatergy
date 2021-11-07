@@ -2,19 +2,22 @@
 #pragma once
 #include <cstdint>
 struct EquipMtrlSetParam {
-    int ItemId0;
-    int ItemId1;
-    int ItemId2;
-    int ItemId3;
-    int ItemId4;
-    int8_t Quantity0;
-    int8_t Quantity1;
-    int8_t Quantity2;
-    int8_t Quantity3;
-    int8_t Quantity4;
-    int8_t ItemType0;
-    int8_t ItemType1;
-    int8_t ItemType2;
-    int8_t ItemType3;
-    int8_t ItemType4;
+    static const wchar_t* name;
+    struct data {                                                   
+        int ItemId0;                                          
+        int ItemId1;                                          
+        int ItemId2;                                          
+        int ItemId3;                                          
+        int ItemId4;                                          
+        int8_t Quantity0;                                        
+        int8_t Quantity1;                                        
+        int8_t Quantity2;                                        
+        int8_t Quantity3;                                        
+        int8_t Quantity4;                                        
+        int8_t ItemType0;                                        
+        int8_t ItemType1;                                        
+        int8_t ItemType2;                                        
+        int8_t ItemType3;                                        
+        int8_t ItemType4;                                        
+    };
 };

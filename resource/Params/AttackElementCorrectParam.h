@@ -2,32 +2,35 @@
 #pragma once
 #include <cstdint>
 struct AttackElementCorrectParam {
-    bool isPhysSTR : 1;                                    // bit offset +0
-    bool isPhysDEX : 1;                                    // bit offset +1
-    bool isPhysINT : 1;                                    // bit offset +2
-    bool isPhysFTH : 1;                                    // bit offset +3
-    bool isPhysLCK : 1;                                    // bit offset +4
-    bool isMagicSTR : 1;                                   // bit offset +5
-    bool isMagicDEX : 1;                                   // bit offset +6
-    bool isMagicINT : 1;                                   // bit offset +7
-    bool :0;
-    bool isMagicFTH : 1;                                   // bit offset +0
-    bool isMagicLCK : 1;                                   // bit offset +1
-    bool isFireSTR : 1;                                    // bit offset +2
-    bool isFireDEX : 1;                                    // bit offset +3
-    bool isFireINT : 1;                                    // bit offset +4
-    bool isFireFTH : 1;                                    // bit offset +5
-    bool isFireLCK : 1;                                    // bit offset +6
-    bool isThunSTR : 1;                                    // bit offset +7
-    bool :0;
-    bool isThunDEX : 1;                                    // bit offset +0
-    bool isThunINT : 1;                                    // bit offset +1
-    bool isThunFTH : 1;                                    // bit offset +2
-    bool isThunLCK : 1;                                    // bit offset +3
-    bool isDarkSTR : 1;                                    // bit offset +4
-    bool isDarkDEX : 1;                                    // bit offset +5
-    bool isDarkINT : 1;                                    // bit offset +6
-    bool isDarkFTH : 1;                                    // bit offset +7
-    bool :0;
-    bool isDarkLCK : 1;                                    // bit offset +0
+    static const wchar_t* name;
+    struct data {                                                   
+        bool isPhysSTR : 1;                                    // bit offset +0
+        bool isPhysDEX : 1;                                    // bit offset +1
+        bool isPhysINT : 1;                                    // bit offset +2
+        bool isPhysFTH : 1;                                    // bit offset +3
+        bool isPhysLCK : 1;                                    // bit offset +4
+        bool isMagicSTR : 1;                                   // bit offset +5
+        bool isMagicDEX : 1;                                   // bit offset +6
+        bool isMagicINT : 1;                                   // bit offset +7
+        bool :0;
+        bool isMagicFTH : 1;                                   // bit offset +0
+        bool isMagicLCK : 1;                                   // bit offset +1
+        bool isFireSTR : 1;                                    // bit offset +2
+        bool isFireDEX : 1;                                    // bit offset +3
+        bool isFireINT : 1;                                    // bit offset +4
+        bool isFireFTH : 1;                                    // bit offset +5
+        bool isFireLCK : 1;                                    // bit offset +6
+        bool isThunSTR : 1;                                    // bit offset +7
+        bool :0;
+        bool isThunDEX : 1;                                    // bit offset +0
+        bool isThunINT : 1;                                    // bit offset +1
+        bool isThunFTH : 1;                                    // bit offset +2
+        bool isThunLCK : 1;                                    // bit offset +3
+        bool isDarkSTR : 1;                                    // bit offset +4
+        bool isDarkDEX : 1;                                    // bit offset +5
+        bool isDarkINT : 1;                                    // bit offset +6
+        bool isDarkFTH : 1;                                    // bit offset +7
+        bool :0;
+        bool isDarkLCK : 1;                                    // bit offset +0
+    };
 };

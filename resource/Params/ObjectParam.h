@@ -2,18 +2,21 @@
 #pragma once
 #include <cstdint>
 struct ObjectParam {
-    short HP;
-private:
-    int8_t _0x2;
-    int8_t _0x3;
-    int8_t _0x4;
-    int8_t _0x5;
-    int8_t _0x6;
-    int8_t _0x7;
-    int8_t _0x8;
+    static const wchar_t* name;
+    struct data {                                                   
+        short HP;                                               
+    private:
+        int8_t _0x2;
+        int8_t _0x3;
+        int8_t _0x4;
+        int8_t _0x5;
+        int8_t _0x6;
+        int8_t _0x7;
+        int8_t _0x8;
+    public:
+    private:
+        bool memBuffer1 : 1;
 public:
-private:
-    bool memBuffer1 : 1;
-public:
-    bool IsBreakbyPlayerCollide : 1;                       // bit offset +1
+        bool IsBreakbyPlayerCollide : 1;                       // bit offset +1
+    };
 };

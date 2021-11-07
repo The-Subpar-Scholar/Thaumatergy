@@ -2,13 +2,16 @@
 #pragma once
 #include <cstdint>
 struct Ceremony {
-    int EventLayerID;
-    int MapStudioLayerID;
-    short GparamID_Up;
-    short GparamID_Low;
-    int PointCloudID;
-    int Gl_TextureID;
-    int LightGroupID;
-    int8_t IsReload;
-    int8_t IsDisableOnline;
+    static const wchar_t* name;
+    struct data {                                                   
+        int EventLayerID;                                     
+        int MapStudioLayerID;                                 
+        short GparamID_Up;                                      
+        short GparamID_Low;                                     
+        int PointCloudID;                                     
+        int Gl_TextureID;                                     
+        int LightGroupID;                                     
+        int8_t IsReload;                                         
+        int8_t IsDisableOnline;                                  
+    };
 };

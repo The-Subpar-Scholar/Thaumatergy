@@ -2,20 +2,23 @@
 #pragma once
 #include <cstdint>
 struct WetAspectParam {
-    int8_t Red;
-    int8_t Green;
-    int8_t Blue;
-private:
-    int8_t _0x3;
+    static const wchar_t* name;
+    struct data {                                                   
+        int8_t Red;                                              
+        int8_t Green;                                            
+        int8_t Blue;                                             
+    private:
+        int8_t _0x3;
 public:
-    float Alpha;
-    int8_t Red2;
-    int8_t Green2;
-    int8_t Blue2;
-private:
-    int8_t _0xB;
+        float Alpha;                                            
+        int8_t Red2;                                             
+        int8_t Green2;                                           
+        int8_t Blue2;                                            
+    private:
+        int8_t _0xB;
 public:
-    float Alpha2;
-    float WetRate;
-    int8_t WetCorrection;
+        float Alpha2;                                           
+        float WetRate;                                          
+        int8_t WetCorrection;                                    
+    };
 };

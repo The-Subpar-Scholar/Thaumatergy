@@ -2,22 +2,25 @@
 #pragma once
 #include <cstdint>
 struct ActionButtonParam {
-    int8_t regionType;
-    int dummyPoly1;
-    int dummyPoly2;
-    float Radius;
-    int Angle;
-    float depth;
-    float width;
-    float height;
-    float baseHeightOffset;
-    int8_t angleCheckType;
-    int AllowAngle;
-    int8_t textBoxType;
-    int textId;
-    int InvalidFlag;
-    int grayoutFlag;
-    int priority;
-    float execInvalidTime;
-    int8_t execButtonCircle;
+    static const wchar_t* name;
+    struct data {                                                   
+        int8_t regionType;                                       
+        int dummyPoly1;                                       
+        int dummyPoly2;                                       
+        float Radius;                                           
+        int Angle;                                            
+        float depth;                                            
+        float width;                                            
+        float height;                                           
+        float baseHeightOffset;                                 
+        int8_t angleCheckType;                                   
+        int AllowAngle;                                       
+        int8_t textBoxType;                                      
+        int textId;                                           
+        int InvalidFlag;                                      
+        int grayoutFlag;                                      
+        int priority;                                         
+        float execInvalidTime;                                  
+        int8_t execButtonCircle;                                 
+    };
 };

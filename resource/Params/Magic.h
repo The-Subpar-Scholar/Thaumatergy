@@ -2,113 +2,167 @@
 #pragma once
 #include <cstdint>
 struct Magic {
-    int8_t YesNoDialogMessageId;
-private:
-    int8_t _0x1;
-    int8_t _0x2;
-    int8_t _0x3;
+    static const wchar_t* name;
+    struct data {                                                   
+        int8_t YesNoDialogMessageId;                             
+    private:
+        int8_t _0x1;
+        int8_t _0x2;
+        int8_t _0x3;
+    public:
+        int LimitCancelSpEffectId;                            
+        short SortId;                                           
+        short RefId;                                            
+        short Mp;                                               
+        short Stamina;                                          
+        short IconId;                                           
+        short BehaviorId;                                       
+        short MtrlItemId;                                       
+        short ReplaceMagicId;                                   
+        short MaxQuantity;                                      
+        int8_t Humanity;                                         
+        int8_t OverDexterity;                                    
+        int8_t SfxVariationId;                                   
+        int8_t SlotLength;                                       
+        int8_t RequirementIntellect;                             
+        int8_t RequirementFaith;                                 
+        int8_t AnalogDexiterityMin;                              
+        int8_t AnalogDexiterityMax;                              
+        int8_t EzStateBehaviorType;                              
+        int8_t RefCategory;                                      
+        int8_t SpEffectCategory;                                 
+        int8_t RefType;                                          
+        int8_t OpmeMenuType;                                     
+        int8_t HasSpEffectType;                                  
+        int8_t ReplaceCategory;                                  
+        int8_t UseLimitCategory;                                 
+        bool DisableOffline : 1;                               // bit offset +0
+        bool CastResonanceMagic : 1;                           // bit offset +1
+        bool :0;
+    private:
+        int8_t _0x2B;
 public:
-    int LimitCancelSpEffectId;
-    short SortId;
-    short RefId;
-    short Mp;
-    short Stamina;
-    short IconId;
-    short BehaviorId;
-    short MtrlItemId;
-    short ReplaceMagicId;
-    short MaxQuantity;
-    int8_t Humanity;
-    int8_t OverDexterity;
-    int8_t SfxVariationId;
-    int8_t SlotLength;
-    int8_t RequirementIntellect;
-    int8_t RequirementFaith;
-    int8_t AnalogDexiterityMin;
-    int8_t AnalogDexiterityMax;
-    int8_t EzStateBehaviorType;
-    int8_t RefCategory;
-    int8_t SpEffectCategory;
-    int8_t RefType;
-    int8_t OpmeMenuType;
-    int8_t HasSpEffectType;
-    int8_t ReplaceCategory;
-    int8_t UseLimitCategory;
-    bool DisableOffline : 1;                               // bit offset +0
-    bool CastResonanceMagic : 1;                           // bit offset +1
-    bool :0;
-private:
-    int8_t _0x2B;
+        bool VowType0 : 1;                                     // bit offset +0
+        bool VowType1 : 1;                                     // bit offset +1
+        bool VowType2 : 1;                                     // bit offset +2
+        bool VowType3 : 1;                                     // bit offset +3
+        bool VowType4 : 1;                                     // bit offset +4
+        bool VowType5 : 1;                                     // bit offset +5
+        bool VowType6 : 1;                                     // bit offset +6
+        bool VowType7 : 1;                                     // bit offset +7
+        bool :0;
+        bool Enable_multi : 1;                                 // bit offset +0
+        bool Enable_multi_only : 1;                            // bit offset +1
+        bool IsEnchant : 1;                                    // bit offset +2
+        bool IsShieldEnchant : 1;                              // bit offset +3
+        bool Enable_live : 1;                                  // bit offset +4
+        bool Enable_gray : 1;                                  // bit offset +5
+        bool Enable_white : 1;                                 // bit offset +6
+        bool Enable_black : 1;                                 // bit offset +7
+        bool :0;
+    private:
+        int8_t _0x2E;
 public:
-    bool VowType0 : 1;                                     // bit offset +0
-    bool VowType1 : 1;                                     // bit offset +1
-    bool VowType2 : 1;                                     // bit offset +2
-    bool VowType3 : 1;                                     // bit offset +3
-    bool VowType4 : 1;                                     // bit offset +4
-    bool VowType5 : 1;                                     // bit offset +5
-    bool VowType6 : 1;                                     // bit offset +6
-    bool VowType7 : 1;                                     // bit offset +7
-    bool :0;
-    bool Enable_multi : 1;                                 // bit offset +0
-    bool Enable_multi_only : 1;                            // bit offset +1
-    bool IsEnchant : 1;                                    // bit offset +2
-    bool IsShieldEnchant : 1;                              // bit offset +3
-    bool Enable_live : 1;                                  // bit offset +4
-    bool Enable_gray : 1;                                  // bit offset +5
-    bool Enable_white : 1;                                 // bit offset +6
-    bool Enable_black : 1;                                 // bit offset +7
-    bool :0;
-private:
-    int8_t _0x2E;
+        bool VowType8 : 1;                                     // bit offset +0
+        bool VowType9 : 1;                                     // bit offset +1
+        bool VowType10 : 1;                                    // bit offset +2
+        bool VowType11 : 1;                                    // bit offset +3
+        bool VowType12 : 1;                                    // bit offset +4
+        bool VowType13 : 1;                                    // bit offset +5
+        bool VowType14 : 1;                                    // bit offset +6
+        bool VowType15 : 1;                                    // bit offset +7
+        int sfxID1;                                           
+        int sfxID2;                                           
+        int sfxID3;                                           
+    private:
+        int8_t _0x3C;
+        int8_t _0x3D;
+        int8_t _0x3E;
+        int8_t _0x3F;
+        int8_t _0x40;
+    public:
+        int8_t FaithBreakpoint20;                                
+        int8_t FaithBreakpoint30;                                
+        int8_t FaithBreakpoint40;                                
+        int8_t FaithBreakpoint60;                                
+        int8_t useBullet2;                                       
+    private:
+        short _0x47;
 public:
-    bool VowType8 : 1;                                     // bit offset +0
-    bool VowType9 : 1;                                     // bit offset +1
-    bool VowType10 : 1;                                    // bit offset +2
-    bool VowType11 : 1;                                    // bit offset +3
-    bool VowType12 : 1;                                    // bit offset +4
-    bool VowType13 : 1;                                    // bit offset +5
-    bool VowType14 : 1;                                    // bit offset +6
-    bool VowType15 : 1;                                    // bit offset +7
-    int sfxID1;
-    int sfxID2;
-    int sfxID3;
-private:
-    int8_t _0x3C;
-    int8_t _0x3D;
-    int8_t _0x3E;
-    int8_t _0x3F;
-    int8_t _0x40;
+        int Spellcastat20Faith;                               
+        int Spellcastat20Faith;                               
+        int Spellcastat20Faith;                               
+        int Spellcastat20Faith;                               
+    private:
+        int8_t _0x58;
+        int8_t _0x59;
+        int8_t _0x5A;
+        int8_t _0x5B;
+        int8_t _0x5C;
+    public:
+        int8_t useBullet3;                                       
+    private:
+        int8_t _0x5E;
+        int8_t _0x5F;
+        int8_t _0x60;
+        int8_t _0x61;
+        int8_t _0x62;
+        int8_t _0x63;
+    public:
+        int Bullet1;                                          
+        int Bullet2;                                          
+        int Bullet3;                                          
+        int Bullet4;                                          
+    private:
+    public:
+        int8_t YesNoDialogBox;                                   
+    private:
+        int8_t _0x1;
+        int8_t _0x2;
+        int8_t _0x3;
+    public:
+        int LimitCancelSpEffectID;                            
+        short SortID;                                           
+        short ReferenceID;                                      
+        short FPCost;                                           
+        short StaminaCost;                                      
+        short IconID;                                           
+        short BehaviorID;                                       
+        short MaterialItemID;                                   
+        short ReplaceMagicID;                                   
+        short NumberofCasts;                                    
+    private:
+        short _0x1A;
 public:
-    int8_t FaithBreakpoint20;
-    int8_t FaithBreakpoint30;
-    int8_t FaithBreakpoint40;
-    int8_t FaithBreakpoint60;
-    int8_t useBullet2;
-private:
-    short _0x47;
+        int8_t SFXVariation;                                     
+        int8_t SlotsUsed;                                        
+        int8_t RequiredINT;                                      
+        int8_t RequiredFAI;                                      
+        int8_t DexterityMinimumCastSpeedScaling;                 
+        int8_t DexterityMaximumCastSpeedScaling;                 
+    private:
+        int8_t _0x22;
 public:
-    int Spellcastat20Faith;
-    int Spellcastat30Faith;
-    int Spellcastat40Faith;
-    int Spellcastat60Faith;
-private:
-    int8_t _0x58;
-    int8_t _0x59;
-    int8_t _0x5A;
-    int8_t _0x5B;
-    int8_t _0x5C;
+        int8_t ReferenceCategory;                                
+    private:
+        int8_t _0x24;
 public:
-    int8_t useBullet3;
-private:
-    int8_t _0x5E;
-    int8_t _0x5F;
-    int8_t _0x60;
-    int8_t _0x61;
-    int8_t _0x62;
-    int8_t _0x63;
-public:
-    int Bullet1;
-    int Bullet2;
-    int Bullet3;
-    int Bullet4;
+        int8_t CastAnimation;                                    
+        int8_t MenuType;                                         
+    private:
+        int8_t _0x27;
+        int8_t _0x28;
+        int8_t _0x29;
+        int8_t _0x2A;
+        int8_t _0x2B;
+        int8_t _0x2C;
+    public:
+        bool EnableMulti : 1;                                  // bit offset +0
+        bool EnableMultOnly : 1;                               // bit offset +1
+        bool IsWeaponEnchant : 2;                              // bit offset +2
+        bool EnableHuman : 1;                                  // bit offset +4
+        bool EnableDragonPhantom : 1;                          // bit offset +5
+        bool EnableWhitePhantom : 1;                           // bit offset +6
+        bool EnableBlackPhantom : 1;                           // bit offset +7
+    };
 };

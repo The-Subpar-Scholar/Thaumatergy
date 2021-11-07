@@ -139,6 +139,9 @@
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/BonfireWarpParam.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/Bullet.cpp">
+			<Option target="Thaumatergy"/>
+		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/Bullet.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
@@ -215,6 +218,9 @@
 			<Option target="Thaumatergy"/>
 		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/SpEffectParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/SpEffectVfxParam.cpp">
 			<Option target="Thaumatergy"/>
 		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/SpEffectVfxParam.h">

@@ -2,138 +2,141 @@
 #pragma once
 #include <cstdint>
 struct EquipParamProtector {
-    int sortId;
-    int wanderingEquipId;
-    int vagrantItemLotId;
-    int vagrantBonusEneDropItemLotId;
-    int vagrantItemEneDropItemLotId;
-    int fixPrice;
-    int basicPrice;
-    int sellValue;
-    float weight;
-    int residentSpEffectId;
-    int residentSpEffectId2;
-    int residentSpEffectId3;
-    int materialSetId;
-    float partsDamageRate;
-    float corectSARecover;
-    int originEquipPro;
-    int originEquipPro1;
-    int originEquipPro2;
-    int originEquipPro3;
-    int originEquipPro4;
-    int originEquipPro5;
-    int originEquipPro6;
-    int originEquipPro7;
-    int originEquipPro8;
-    int originEquipPro9;
-    int originEquipPro10;
-    int originEquipPro11;
-    int originEquipPro12;
-    int originEquipPro13;
-    int originEquipPro14;
-    int originEquipPro15;
-    float faceScaleM_ScaleX;
-    float faceScaleM_ScaleZ;
-    float faceScaleM_MaxX;
-    float faceScaleM_MaxZ;
-    float faceScaleF_ScaleX;
-    float faceScaleF_ScaleZ;
-    float faceScaleF_MaxX;
-    float faceScaleF_MaxZ;
-    int qwcId;
-    short equipModelId;
-    short iconIdM;
-    int iconIdF;
-    short knockbackBounceRate;
-    short durability;
-    short durabilityMax;
-    short saDurability;
-    short defFlickPower;
-    short defensePhysics;
-    short defenseMagic;
-    short defenseFire;
-    short defenseThunder;
-    short defenseSlash;
-    short defenseBlow;
-    short defenseThrust;
-    short resistPoison;
-    short resistDisease;
-    short resistBlood;
-    short resistCurse;
-    short reinforceTypeId;
-    short trophySGradeId;
-    short shopLv;
-    int8_t knockbackParamId;
-    int8_t flickDamageCutRate;
-    int8_t equipModelCategory;
-private:
+    static const wchar_t* name;
+    struct data {                                                   
+        int sortId;                                           
+        int wanderingEquipId;                                 
+        int vagrantItemLotId;                                 
+        int vagrantBonusEneDropItemLotId;                     
+        int vagrantItemEneDropItemLotId;                      
+        int fixPrice;                                         
+        int basicPrice;                                       
+        int sellValue;                                        
+        float weight;                                           
+        int residentSpEffectId;                               
+        int residentSpEffectId2;                              
+        int residentSpEffectId3;                              
+        int materialSetId;                                    
+        float partsDamageRate;                                  
+        float corectSARecover;                                  
+        int originEquipPro;                                   
+        int originEquipPro1;                                  
+        int originEquipPro2;                                  
+        int originEquipPro3;                                  
+        int originEquipPro4;                                  
+        int originEquipPro5;                                  
+        int originEquipPro6;                                  
+        int originEquipPro7;                                  
+        int originEquipPro8;                                  
+        int originEquipPro9;                                  
+        int originEquipPro10;                                 
+        int originEquipPro11;                                 
+        int originEquipPro12;                                 
+        int originEquipPro13;                                 
+        int originEquipPro14;                                 
+        int originEquipPro15;                                 
+        float faceScaleM_ScaleX;                                
+        float faceScaleM_ScaleZ;                                
+        float faceScaleM_MaxX;                                  
+        float faceScaleM_MaxZ;                                  
+        float faceScaleF_ScaleX;                                
+        float faceScaleF_ScaleZ;                                
+        float faceScaleF_MaxX;                                  
+        float faceScaleF_MaxZ;                                  
+        int qwcId;                                            
+        short equipModelId;                                     
+        short iconIdM;                                          
+        int iconIdF;                                          
+        short knockbackBounceRate;                              
+        short durability;                                       
+        short durabilityMax;                                    
+        short saDurability;                                     
+        short defFlickPower;                                    
+        short defensePhysics;                                   
+        short defenseMagic;                                     
+        short defenseFire;                                      
+        short defenseThunder;                                   
+        short defenseSlash;                                     
+        short defenseBlow;                                      
+        short defenseThrust;                                    
+        short resistPoison;                                     
+        short resistDisease;                                    
+        short resistBlood;                                      
+        short resistCurse;                                      
+        short reinforceTypeId;                                  
+        short trophySGradeId;                                   
+        short shopLv;                                           
+        int8_t knockbackParamId;                                 
+        int8_t flickDamageCutRate;                               
+        int8_t equipModelCategory;                               
+    private:
+    public:
+        int8_t equipModelGender;                                 
+    private:
+        int8_t _0xD1;
 public:
-    int8_t equipModelGender;
-private:
-    int8_t _0xD1;
+        int8_t protectorCategory;                                
+        int8_t defenseMaterial;                                  
+        int8_t defenseMaterialSfx;                               
+        int8_t partsDmgType;                                     
+        int8_t defenseMaterial_Weak;                             
+        int8_t defenseMaterialSfx_Weak;                          
+    private:
+        int8_t _0xD8;
+        int8_t _0xD9;
+        int8_t _0xDA;
+        int8_t _0xDB;
+        int8_t _0xDC;
+        int8_t _0xDD;
+        int8_t _0xDE;
+    public:
+        bool isDiscard : 1;                                    // bit offset +0
+        bool isDrop : 1;                                       // bit offset +1
+        float absorbtionPhysical;                               
+        float absorbtionSlash;                                  
+        float absorbtionStrike;                                 
+        float absorbtionThrust;                                 
+        float absorbtionMagic;                                  
+        float absorbtionFire;                                   
+        float absorbtionThunder;                                
+    private:
+        int8_t _0xFC;
+        int8_t _0xFD;
+        int8_t _0xFE;
+        int8_t _0xFF;
+        int8_t _0x100;
+        int8_t _0x101;
+        int8_t _0x102;
+        int8_t _0x103;
+        int8_t _0x104;
+        int8_t _0x105;
+        int8_t _0x106;
+        int8_t _0x107;
+        int8_t _0x108;
+        int8_t _0x109;
+        int8_t _0x10A;
+        int8_t _0x10B;
+        int8_t _0x10C;
+        int8_t _0x10D;
+        int8_t _0x10E;
+        int8_t _0x10F;
+    public:
+        float poise;                                            
+    private:
+        float _0x114;
 public:
-    int8_t protectorCategory;
-    int8_t defenseMaterial;
-    int8_t defenseMaterialSfx;
-    int8_t partsDmgType;
-    int8_t defenseMaterial_Weak;
-    int8_t defenseMaterialSfx_Weak;
-private:
-    int8_t _0xD8;
-    int8_t _0xD9;
-    int8_t _0xDA;
-    int8_t _0xDB;
-    int8_t _0xDC;
-    int8_t _0xDD;
-    int8_t _0xDE;
-public:
-    bool isDiscard : 1;                                    // bit offset +0
-    bool isDrop : 1;                                       // bit offset +1
-    float absorbtionPhysical;
-    float absorbtionSlash;
-    float absorbtionStrike;
-    float absorbtionThrust;
-    float absorbtionMagic;
-    float absorbtionFire;
-    float absorbtionThunder;
-private:
-    int8_t _0xFC;
-    int8_t _0xFD;
-    int8_t _0xFE;
-    int8_t _0xFF;
-    int8_t _0x100;
-    int8_t _0x101;
-    int8_t _0x102;
-    int8_t _0x103;
-    int8_t _0x104;
-    int8_t _0x105;
-    int8_t _0x106;
-    int8_t _0x107;
-    int8_t _0x108;
-    int8_t _0x109;
-    int8_t _0x10A;
-    int8_t _0x10B;
-    int8_t _0x10C;
-    int8_t _0x10D;
-    int8_t _0x10E;
-    int8_t _0x10F;
-public:
-    float poise;
-private:
-    float _0x114;
-public:
-    float absorbtionDark;
-    short defenseDark;
-private:
-    int8_t _0x11E;
-    int8_t _0x11F;
-    int8_t _0x120;
-    int8_t _0x121;
-    int8_t _0x122;
-    int8_t _0x123;
-public:
-    int UpperArmID;
-    int shopPrice;
-    short resistFrost;
+        float absorbtionDark;                                   
+        short defenseDark;                                      
+    private:
+        int8_t _0x11E;
+        int8_t _0x11F;
+        int8_t _0x120;
+        int8_t _0x121;
+        int8_t _0x122;
+        int8_t _0x123;
+    public:
+        int UpperArmID;                                       
+        int shopPrice;                                        
+        short resistFrost;                                      
+    };
 };

@@ -2,18 +2,21 @@
 #pragma once
 #include <cstdint>
 struct ShopLineupParam {
-    int EquipId;
-    int Value;
-    int MtrlId;
-    int EventFlag;
-    int qwcID;
-    short SellQuantity;
-    int8_t ShopType;
-    int8_t EquipType;
-    short Durability;
-private:
-    short _0x1A;
+    static const wchar_t* name;
+    struct data {                                                   
+        int EquipId;                                          
+        int Value;                                            
+        int MtrlId;                                           
+        int EventFlag;                                        
+        int qwcID;                                            
+        short SellQuantity;                                     
+        int8_t ShopType;                                         
+        int8_t EquipType;                                        
+        short Durability;                                       
+    private:
+        short _0x1A;
 public:
-    int Unknown;
-    float PriceRate;
+        int Unknown;                                          
+        float PriceRate;                                        
+    };
 };

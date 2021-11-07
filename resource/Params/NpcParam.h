@@ -2,269 +2,272 @@
 #pragma once
 #include <cstdint>
 struct NpcParam {
-    int behaviorVariationId;
-    int AiThinkId;
-    int NameId;
-    float turnVellocity;
-    float hitHeight;
-    float hitRadius;
-    int weight;
-    float hitOffset;
-    int Hp;
-    int Mp;
-    int getSoul;
-    int ItemLotId1;
-    int ItemLotId2;
-    int ItemLotId3;
-    int ItemLotId4;
-    int ItemLotId5;
-    int ItemLotId6;
-    int humanityLotId;
-    int spEffectId0;
-    int spEffectId1;
-    int spEffectId2;
-    int spEffectId3;
-    int spEffectId4;
-    int spEffectId5;
-    int spEffectId6;
-    int spEffectId7;
-    int GameClearSpEffectID;
-    float physGuardCutRate;
-    float magGuardCutRate;
-    float fireGuardCutRate;
-    float thunGuardCutRate;
-    int animidOffset;
-    int moveAnimId;
-    int spMoveAnimId1;
-    int spMoveAnimId2;
-    float networkWarpDisp;
-    int dbgBehaviorR1;
-    int dbgBehaviorL1;
-    int dbgBehaviorR2;
-    int dbgBehaviorL2;
-    int dbgBehaviorRL;
-    int dbgBehaviorRR;
-    int dbgBehaviorRD;
-    int dbgBehaviorRU;
-    int dbgBehaviorLL;
-    int dbgBehaviorLR;
-    int dbgBehaviorLD;
-    int dbgBehaviorLU;
-    int animIdOffset;
-    float partsDamageRate1;
-    float partsDamageRate2;
-    float partsDamageRate3;
-    float partsDamageRate4;
-    float partsDamageRate5;
-    float partsDamageRate6;
-    float partsDamageRate7;
-    float partsDamageRate8;
-    float weakPartsDamageRate;
-    float SuperArmorRecoverCorrection;
-    float SuperArmorBrakeKnockbackDist;
-    short stamina;
-    short staminaRecoverBaseVal;
-    short defPhys;
-    short defSlash;
-    short defBlow;
-    short defThrust;
-    short defMag;
-    short defFire;
-    short defThunder;
-    short defFlickPower;
-    short resistPoison;
-    short resistToxic;
-    short resistBlood;
-    short resistCurse;
-    short ghostModelId;
-    short normalChangeResourceId;
-    short guardAngle;
-    short slashGuardCutRate;
-    short blowGuardCutRate;
-    short thrustGuardCutRate;
-    short superArmorDurability;
-    short normalChangeTexChrId;
-    short dropType;
-    int8_t knockbackRate;
-    int8_t knockbackParamId;
-    int8_t fallDamageDamp;
-    int8_t staminaGuardDef;
-    int8_t pcAttrB;
-    int8_t pcAttrW;
-    int8_t pcAttrL;
-    int8_t pcAttrR;
-    int8_t areaAttrB;
-    int8_t areaAttrW;
-    int8_t areaAttrL;
-    int8_t areaAttrR;
-    int8_t mpRecoverBaseVal;
-    int8_t flickDamageCutRate;
-    int8_t defaultLodParamId;
-    int8_t drawType;
-    int8_t npcType;
-    int8_t teamType;
-    int8_t moveType;
-    int8_t lockDist;
-    short material;
-    short materialSfx;
-    int8_t partsDamageType;
-    int8_t maxUndurationAng;
-    int8_t guardLevel;
-    int8_t burnsfxType;
-    int8_t poisonGuardResist;
-    int8_t toxicGuardResist;
-    int8_t bloodGuardResist;
-    int8_t curseGuardResist;
-    int8_t parryAttack;
-    int8_t parryDefense;
-    int8_t sfxSize;
-    int8_t pushOutCamRegionRadius;
-    int8_t hitStopType;
-    int8_t ladderEndChkOffsetTop;
-    int8_t ladderEndChkOffsetLow;
-    bool UseRagdollCamHit : 1;                             // bit offset +0
-    bool disableClothRigidHit : 1;                         // bit offset +1
-    bool UseRagdoll : 1;                                   // bit offset +2
-    bool isDemon : 1;                                      // bit offset +3
-    bool isGhost : 1;                                      // bit offset +4
-    bool isNoDamageMotion : 1;                             // bit offset +5
-    bool isUnduration : 1;                                 // bit offset +6
-    bool isChangeWanderGhost : 1;                          // bit offset +7
-    bool :0;
-    bool ModelDispMask0 : 1;                               // bit offset +0
-    bool ModelDispMask1 : 1;                               // bit offset +1
-    bool ModelDispMask2 : 1;                               // bit offset +2
-    bool ModelDispMask3 : 1;                               // bit offset +3
-    bool ModelDispMask4 : 1;                               // bit offset +4
-    bool ModelDispMask5 : 1;                               // bit offset +5
-    bool ModelDispMask6 : 1;                               // bit offset +6
-    bool ModelDispMask7 : 1;                               // bit offset +7
-    bool :0;
-    bool ModelDispMask8 : 1;                               // bit offset +0
-    bool ModelDispMask9 : 1;                               // bit offset +1
-    bool ModelDispMask10 : 1;                              // bit offset +2
-    bool ModelDispMask11 : 1;                              // bit offset +3
-    bool ModelDispMask12 : 1;                              // bit offset +4
-    bool ModelDispMask13 : 1;                              // bit offset +5
-    bool ModelDispMask14 : 1;                              // bit offset +6
-    bool ModelDispMask15 : 1;                              // bit offset +7
-    bool :0;
-    bool isEnableNeckTurn : 1;                             // bit offset +0
-    bool disableRespawn : 1;                               // bit offset +1
-    bool isMoveAnimWait : 1;                               // bit offset +2
-    bool isCrowd : 1;                                      // bit offset +3
-    bool isWeakSaint : 1;                                  // bit offset +4
-    bool isWeakA : 1;                                      // bit offset +5
-    bool isWeakB : 1;                                      // bit offset +6
-    bool isEnableDropSoulCapture : 1;                      // bit offset +7
-    bool :0;
-    bool VowType0 : 1;                                     // bit offset +0
-    bool VowType1 : 1;                                     // bit offset +1
-    bool VowType2 : 1;                                     // bit offset +2
-    bool disableIntiliazeDead : 1;                         // bit offset +3
-    bool isSoulGetByBoss : 1;                              // bit offset +4
-    bool isMultilingual : 1;                               // bit offset +5
-    bool Unk1 : 1;                                         // bit offset +6
-    bool Unk2 : 1;                                         // bit offset +7
-    bool :0;
-    bool ModelDispMask16 : 1;                              // bit offset +0
-    bool ModelDispMask17 : 1;                              // bit offset +1
-    bool ModelDispMask18 : 1;                              // bit offset +2
-    bool ModelDispMask19 : 1;                              // bit offset +3
-    bool ModelDispMask20 : 1;                              // bit offset +4
-    bool ModelDispMask21 : 1;                              // bit offset +5
-    bool ModelDispMask22 : 1;                              // bit offset +6
-    bool ModelDispMask23 : 1;                              // bit offset +7
-    bool :0;
-    bool ModelDispMask24 : 1;                              // bit offset +0
-    bool ModelDispMask25 : 1;                              // bit offset +1
-    bool ModelDispMask26 : 1;                              // bit offset +2
-    bool ModelDispMask27 : 1;                              // bit offset +3
-    bool ModelDispMask28 : 1;                              // bit offset +4
-    bool ModelDispMask29 : 1;                              // bit offset +5
-    bool ModelDispMask30 : 1;                              // bit offset +6
-    bool ModelDispMask31 : 1;                              // bit offset +7
-    float itemSearchRadius;
-    float subHitHeight;
-    float subHitRadius;
-    int8_t turnVelocityType;
-    bool isMultModeBoss : 1;                               // bit offset +0
-    bool Unk3 : 1;                                         // bit offset +1
-    bool behMemSize : 1;                                   // bit offset +2
-    bool Unk4 : 1;                                         // bit offset +3
-    bool isUseFeetData : 1;                                // bit offset +4
-    bool Unk5 : 1;                                         // bit offset +5
-    bool Unk6 : 1;                                         // bit offset +6
-    bool Unk7 : 1;                                         // bit offset +7
-    short defDark;
-    float subTurnVelocity;
-    int footStepId;
-    short subMaterial;
-    short subMaterialSfx;
-    short material_Weak;
-    short materialSfx_Weak;
-    short subMaterial_weak;
-    short subMaterialSfx_weak;
-    int spEffectId8;
-    int spEffectId9;
-    int spEffectId10;
-    int spEffectId11;
-    int spEffectId12;
-    int spEffectId13;
-    int spEffectId14;
-    int spEffectId15;
-    int TentativePlayerId;
-    int basicToughnessValue;
-    float gameSystemParamCorrection;
-    float regainRate_PhysNeutral;
-    float regainRate_PhysSlash;
-    float regainRate_PhysBlow;
-    float regainRate_PhysThrust;
-    float regainRate_Magic;
-    float regainRate_Fire;
-    float regainRate_Thunder;
-    float regainRate_Dark;
-    float maxAnkleAngle;
-    int8_t clothUpdateOffset;
-    int8_t spNpcType;
-    short normalChangeModelId;
-    short normalChangeAnimChrId;
-    short staminaGuardDefVal;
-    int CultSettingId;
-    int PhantomParamId;
-    int MultiPlayCorrectionId;
-    float FootAnkle;
-    short resistFrost;
-    int8_t subNpcType;
-    int8_t subTeamType;
-    int lockCamParamId;
-    int spEffectId16;
-    int spEffectId17;
-    int spEffectId18;
-    int spEffectId19;
-    int spEffectId20;
-    int spEffectId21;
-    int spEffectId22;
-    int spEffectId23;
-    int spEffectId24;
-    int spEffectId25;
-    int spEffectId26;
-    int spEffectId27;
-    int spEffectId28;
-    int spEffectId29;
-    int spEffectId30;
-    int spEffectId31;
-    float lockCorrection;
-    int8_t subClothUpdateOffset;
-    short EstusFlaskParamId;
-    int TextId;
-    short HPandMP_RestoreId0;
-    short HP_RestoreId0;
-    short MP_RestoreId0;
-    short HPandMP_RestoreId1;
-    short HP_RestoreId1;
-    short MP_RestoreId1;
-    int subPhantomParamId;
-    short activateDistance;
-    short DeactivateDistance;
+    static const wchar_t* name;
+    struct data {                                                   
+        int behaviorVariationId;                              
+        int AiThinkId;                                        
+        int NameId;                                           
+        float turnVellocity;                                    
+        float hitHeight;                                        
+        float hitRadius;                                        
+        int weight;                                           
+        float hitOffset;                                        
+        int Hp;                                               
+        int Mp;                                               
+        int getSoul;                                          
+        int ItemLotId1;                                       
+        int ItemLotId2;                                       
+        int ItemLotId3;                                       
+        int ItemLotId4;                                       
+        int ItemLotId5;                                       
+        int ItemLotId6;                                       
+        int humanityLotId;                                    
+        int spEffectId0;                                      
+        int spEffectId1;                                      
+        int spEffectId2;                                      
+        int spEffectId3;                                      
+        int spEffectId4;                                      
+        int spEffectId5;                                      
+        int spEffectId6;                                      
+        int spEffectId7;                                      
+        int GameClearSpEffectID;                              
+        float physGuardCutRate;                                 
+        float magGuardCutRate;                                  
+        float fireGuardCutRate;                                 
+        float thunGuardCutRate;                                 
+        int animidOffset;                                     
+        int moveAnimId;                                       
+        int spMoveAnimId1;                                    
+        int spMoveAnimId2;                                    
+        float networkWarpDisp;                                  
+        int dbgBehaviorR1;                                    
+        int dbgBehaviorL1;                                    
+        int dbgBehaviorR2;                                    
+        int dbgBehaviorL2;                                    
+        int dbgBehaviorRL;                                    
+        int dbgBehaviorRR;                                    
+        int dbgBehaviorRD;                                    
+        int dbgBehaviorRU;                                    
+        int dbgBehaviorLL;                                    
+        int dbgBehaviorLR;                                    
+        int dbgBehaviorLD;                                    
+        int dbgBehaviorLU;                                    
+        int animIdOffset;                                     
+        float partsDamageRate1;                                 
+        float partsDamageRate2;                                 
+        float partsDamageRate3;                                 
+        float partsDamageRate4;                                 
+        float partsDamageRate5;                                 
+        float partsDamageRate6;                                 
+        float partsDamageRate7;                                 
+        float partsDamageRate8;                                 
+        float weakPartsDamageRate;                              
+        float SuperArmorRecoverCorrection;                      
+        float SuperArmorBrakeKnockbackDist;                     
+        short stamina;                                          
+        short staminaRecoverBaseVal;                            
+        short defPhys;                                          
+        short defSlash;                                         
+        short defBlow;                                          
+        short defThrust;                                        
+        short defMag;                                           
+        short defFire;                                          
+        short defThunder;                                       
+        short defFlickPower;                                    
+        short resistPoison;                                     
+        short resistToxic;                                      
+        short resistBlood;                                      
+        short resistCurse;                                      
+        short ghostModelId;                                     
+        short normalChangeResourceId;                           
+        short guardAngle;                                       
+        short slashGuardCutRate;                                
+        short blowGuardCutRate;                                 
+        short thrustGuardCutRate;                               
+        short superArmorDurability;                             
+        short normalChangeTexChrId;                             
+        short dropType;                                         
+        int8_t knockbackRate;                                    
+        int8_t knockbackParamId;                                 
+        int8_t fallDamageDamp;                                   
+        int8_t staminaGuardDef;                                  
+        int8_t pcAttrB;                                          
+        int8_t pcAttrW;                                          
+        int8_t pcAttrL;                                          
+        int8_t pcAttrR;                                          
+        int8_t areaAttrB;                                        
+        int8_t areaAttrW;                                        
+        int8_t areaAttrL;                                        
+        int8_t areaAttrR;                                        
+        int8_t mpRecoverBaseVal;                                 
+        int8_t flickDamageCutRate;                               
+        int8_t defaultLodParamId;                                
+        int8_t drawType;                                         
+        int8_t npcType;                                          
+        int8_t teamType;                                         
+        int8_t moveType;                                         
+        int8_t lockDist;                                         
+        short material;                                         
+        short materialSfx;                                      
+        int8_t partsDamageType;                                  
+        int8_t maxUndurationAng;                                 
+        int8_t guardLevel;                                       
+        int8_t burnsfxType;                                      
+        int8_t poisonGuardResist;                                
+        int8_t toxicGuardResist;                                 
+        int8_t bloodGuardResist;                                 
+        int8_t curseGuardResist;                                 
+        int8_t parryAttack;                                      
+        int8_t parryDefense;                                     
+        int8_t sfxSize;                                          
+        int8_t pushOutCamRegionRadius;                           
+        int8_t hitStopType;                                      
+        int8_t ladderEndChkOffsetTop;                            
+        int8_t ladderEndChkOffsetLow;                            
+        bool UseRagdollCamHit : 1;                             // bit offset +0
+        bool disableClothRigidHit : 1;                         // bit offset +1
+        bool UseRagdoll : 1;                                   // bit offset +2
+        bool isDemon : 1;                                      // bit offset +3
+        bool isGhost : 1;                                      // bit offset +4
+        bool isNoDamageMotion : 1;                             // bit offset +5
+        bool isUnduration : 1;                                 // bit offset +6
+        bool isChangeWanderGhost : 1;                          // bit offset +7
+        bool :0;
+        bool ModelDispMask0 : 1;                               // bit offset +0
+        bool ModelDispMask1 : 1;                               // bit offset +1
+        bool ModelDispMask2 : 1;                               // bit offset +2
+        bool ModelDispMask3 : 1;                               // bit offset +3
+        bool ModelDispMask4 : 1;                               // bit offset +4
+        bool ModelDispMask5 : 1;                               // bit offset +5
+        bool ModelDispMask6 : 1;                               // bit offset +6
+        bool ModelDispMask7 : 1;                               // bit offset +7
+        bool :0;
+        bool ModelDispMask8 : 1;                               // bit offset +0
+        bool ModelDispMask9 : 1;                               // bit offset +1
+        bool ModelDispMask10 : 1;                              // bit offset +2
+        bool ModelDispMask11 : 1;                              // bit offset +3
+        bool ModelDispMask12 : 1;                              // bit offset +4
+        bool ModelDispMask13 : 1;                              // bit offset +5
+        bool ModelDispMask14 : 1;                              // bit offset +6
+        bool ModelDispMask15 : 1;                              // bit offset +7
+        bool :0;
+        bool isEnableNeckTurn : 1;                             // bit offset +0
+        bool disableRespawn : 1;                               // bit offset +1
+        bool isMoveAnimWait : 1;                               // bit offset +2
+        bool isCrowd : 1;                                      // bit offset +3
+        bool isWeakSaint : 1;                                  // bit offset +4
+        bool isWeakA : 1;                                      // bit offset +5
+        bool isWeakB : 1;                                      // bit offset +6
+        bool isEnableDropSoulCapture : 1;                      // bit offset +7
+        bool :0;
+        bool VowType0 : 1;                                     // bit offset +0
+        bool VowType1 : 1;                                     // bit offset +1
+        bool VowType2 : 1;                                     // bit offset +2
+        bool disableIntiliazeDead : 1;                         // bit offset +3
+        bool isSoulGetByBoss : 1;                              // bit offset +4
+        bool isMultilingual : 1;                               // bit offset +5
+        bool Unk1 : 1;                                         // bit offset +6
+        bool Unk2 : 1;                                         // bit offset +7
+        bool :0;
+        bool ModelDispMask16 : 1;                              // bit offset +0
+        bool ModelDispMask17 : 1;                              // bit offset +1
+        bool ModelDispMask18 : 1;                              // bit offset +2
+        bool ModelDispMask19 : 1;                              // bit offset +3
+        bool ModelDispMask20 : 1;                              // bit offset +4
+        bool ModelDispMask21 : 1;                              // bit offset +5
+        bool ModelDispMask22 : 1;                              // bit offset +6
+        bool ModelDispMask23 : 1;                              // bit offset +7
+        bool :0;
+        bool ModelDispMask24 : 1;                              // bit offset +0
+        bool ModelDispMask25 : 1;                              // bit offset +1
+        bool ModelDispMask26 : 1;                              // bit offset +2
+        bool ModelDispMask27 : 1;                              // bit offset +3
+        bool ModelDispMask28 : 1;                              // bit offset +4
+        bool ModelDispMask29 : 1;                              // bit offset +5
+        bool ModelDispMask30 : 1;                              // bit offset +6
+        bool ModelDispMask31 : 1;                              // bit offset +7
+        float itemSearchRadius;                                 
+        float subHitHeight;                                     
+        float subHitRadius;                                     
+        int8_t turnVelocityType;                                 
+        bool isMultModeBoss : 1;                               // bit offset +0
+        bool Unk3 : 1;                                         // bit offset +1
+        bool behMemSize : 1;                                   // bit offset +2
+        bool Unk4 : 1;                                         // bit offset +3
+        bool isUseFeetData : 1;                                // bit offset +4
+        bool Unk5 : 1;                                         // bit offset +5
+        bool Unk6 : 1;                                         // bit offset +6
+        bool Unk7 : 1;                                         // bit offset +7
+        short defDark;                                          
+        float subTurnVelocity;                                  
+        int footStepId;                                       
+        short subMaterial;                                      
+        short subMaterialSfx;                                   
+        short material_Weak;                                    
+        short materialSfx_Weak;                                 
+        short subMaterial_weak;                                 
+        short subMaterialSfx_weak;                              
+        int spEffectId8;                                      
+        int spEffectId9;                                      
+        int spEffectId10;                                     
+        int spEffectId11;                                     
+        int spEffectId12;                                     
+        int spEffectId13;                                     
+        int spEffectId14;                                     
+        int spEffectId15;                                     
+        int TentativePlayerId;                                
+        int basicToughnessValue;                              
+        float gameSystemParamCorrection;                        
+        float regainRate_PhysNeutral;                           
+        float regainRate_PhysSlash;                             
+        float regainRate_PhysBlow;                              
+        float regainRate_PhysThrust;                            
+        float regainRate_Magic;                                 
+        float regainRate_Fire;                                  
+        float regainRate_Thunder;                               
+        float regainRate_Dark;                                  
+        float maxAnkleAngle;                                    
+        int8_t clothUpdateOffset;                                
+        int8_t spNpcType;                                        
+        short normalChangeModelId;                              
+        short normalChangeAnimChrId;                            
+        short staminaGuardDefVal;                               
+        int CultSettingId;                                    
+        int PhantomParamId;                                   
+        int MultiPlayCorrectionId;                            
+        float FootAnkle;                                        
+        short resistFrost;                                      
+        int8_t subNpcType;                                       
+        int8_t subTeamType;                                      
+        int lockCamParamId;                                   
+        int spEffectId16;                                     
+        int spEffectId17;                                     
+        int spEffectId18;                                     
+        int spEffectId19;                                     
+        int spEffectId20;                                     
+        int spEffectId21;                                     
+        int spEffectId22;                                     
+        int spEffectId23;                                     
+        int spEffectId24;                                     
+        int spEffectId25;                                     
+        int spEffectId26;                                     
+        int spEffectId27;                                     
+        int spEffectId28;                                     
+        int spEffectId29;                                     
+        int spEffectId30;                                     
+        int spEffectId31;                                     
+        float lockCorrection;                                   
+        int8_t subClothUpdateOffset;                             
+        short EstusFlaskParamId;                                
+        int TextId;                                           
+        short HPandMP_RestoreId0;                               
+        short HP_RestoreId0;                                    
+        short MP_RestoreId0;                                    
+        short HPandMP_RestoreId1;                               
+        short HP_RestoreId1;                                    
+        short MP_RestoreId1;                                    
+        int subPhantomParamId;                                
+        short activateDistance;                                 
+        short DeactivateDistance;                               
+    };
 };

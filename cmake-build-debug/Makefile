@@ -224,6 +224,54 @@ resource/ParamPatch.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Thaumatergy.dir\build.make CMakeFiles/Thaumatergy.dir/resource/ParamPatch.cpp.s
 .PHONY : resource/ParamPatch.cpp.s
 
+resource/Params/Bullet.obj: resource/Params/Bullet.cpp.obj
+.PHONY : resource/Params/Bullet.obj
+
+# target to build an object file
+resource/Params/Bullet.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Thaumatergy.dir\build.make CMakeFiles/Thaumatergy.dir/resource/Params/Bullet.cpp.obj
+.PHONY : resource/Params/Bullet.cpp.obj
+
+resource/Params/Bullet.i: resource/Params/Bullet.cpp.i
+.PHONY : resource/Params/Bullet.i
+
+# target to preprocess a source file
+resource/Params/Bullet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Thaumatergy.dir\build.make CMakeFiles/Thaumatergy.dir/resource/Params/Bullet.cpp.i
+.PHONY : resource/Params/Bullet.cpp.i
+
+resource/Params/Bullet.s: resource/Params/Bullet.cpp.s
+.PHONY : resource/Params/Bullet.s
+
+# target to generate assembly for a file
+resource/Params/Bullet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Thaumatergy.dir\build.make CMakeFiles/Thaumatergy.dir/resource/Params/Bullet.cpp.s
+.PHONY : resource/Params/Bullet.cpp.s
+
+resource/Params/SpEffectVfxParam.obj: resource/Params/SpEffectVfxParam.cpp.obj
+.PHONY : resource/Params/SpEffectVfxParam.obj
+
+# target to build an object file
+resource/Params/SpEffectVfxParam.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Thaumatergy.dir\build.make CMakeFiles/Thaumatergy.dir/resource/Params/SpEffectVfxParam.cpp.obj
+.PHONY : resource/Params/SpEffectVfxParam.cpp.obj
+
+resource/Params/SpEffectVfxParam.i: resource/Params/SpEffectVfxParam.cpp.i
+.PHONY : resource/Params/SpEffectVfxParam.i
+
+# target to preprocess a source file
+resource/Params/SpEffectVfxParam.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Thaumatergy.dir\build.make CMakeFiles/Thaumatergy.dir/resource/Params/SpEffectVfxParam.cpp.i
+.PHONY : resource/Params/SpEffectVfxParam.cpp.i
+
+resource/Params/SpEffectVfxParam.s: resource/Params/SpEffectVfxParam.cpp.s
+.PHONY : resource/Params/SpEffectVfxParam.s
+
+# target to generate assembly for a file
+resource/Params/SpEffectVfxParam.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Thaumatergy.dir\build.make CMakeFiles/Thaumatergy.dir/resource/Params/SpEffectVfxParam.cpp.s
+.PHONY : resource/Params/SpEffectVfxParam.cpp.s
+
 src/Main.obj: src/Main.cpp.obj
 .PHONY : src/Main.obj
 
@@ -317,6 +365,12 @@ help:
 	@echo ... resource/ParamPatch.obj
 	@echo ... resource/ParamPatch.i
 	@echo ... resource/ParamPatch.s
+	@echo ... resource/Params/Bullet.obj
+	@echo ... resource/Params/Bullet.i
+	@echo ... resource/Params/Bullet.s
+	@echo ... resource/Params/SpEffectVfxParam.obj
+	@echo ... resource/Params/SpEffectVfxParam.i
+	@echo ... resource/Params/SpEffectVfxParam.s
 	@echo ... src/Main.obj
 	@echo ... src/Main.i
 	@echo ... src/Main.s

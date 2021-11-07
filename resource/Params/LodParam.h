@@ -2,21 +2,24 @@
 #pragma once
 #include <cstdint>
 struct LodParam {
-    float lv01_BorderDist;
-    float lv01_PlayDist;
-    float lv12_BorderDist;
-    float lv12_PlayDist;
-    int8_t textureLod;
-private:
-    int8_t _0x11;
-    int8_t _0x12;
-    int8_t _0x13;
-public:
-    float lv23_BorderDist;
-    float lv23_PlayDist;
-    float lv34_BorderDist;
-    float lv34_PlayDist;
-    float lv45_BorderDist;
-    float lv45_PlayDist;
-    int8_t distanceScaleId;
+    static const wchar_t* name;
+    struct data {                                                   
+        float lv01_BorderDist;                                  
+        float lv01_PlayDist;                                    
+        float lv12_BorderDist;                                  
+        float lv12_PlayDist;                                    
+        int8_t textureLod;                                       
+    private:
+        int8_t _0x11;
+        int8_t _0x12;
+        int8_t _0x13;
+    public:
+        float lv23_BorderDist;                                  
+        float lv23_PlayDist;                                    
+        float lv34_BorderDist;                                  
+        float lv34_PlayDist;                                    
+        float lv45_BorderDist;                                  
+        float lv45_PlayDist;                                    
+        int8_t distanceScaleId;                                  
+    };
 };

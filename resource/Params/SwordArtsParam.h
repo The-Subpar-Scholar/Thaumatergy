@@ -2,23 +2,26 @@
 #pragma once
 #include <cstdint>
 struct SwordArtsParam {
-    int8_t WeaponArtId;
-private:
-    int8_t _0x1;
-    int8_t _0x2;
-    int8_t _0x3;
-    int8_t _0x4;
-    int8_t _0x5;
-    int8_t _0x6;
-    int8_t _0x7;
-    int8_t _0x8;
-    int8_t _0x9;
-    int8_t _0xA;
-    int8_t _0xB;
-    int8_t _0xC;
-    int8_t _0xD;
-public:
-    short FPcost;
-    short R1FP;
-    short R2FP;
+    static const wchar_t* name;
+    struct data {                                                   
+        int8_t WeaponArtId;                                      
+    private:
+        int8_t _0x1;
+        int8_t _0x2;
+        int8_t _0x3;
+        int8_t _0x4;
+        int8_t _0x5;
+        int8_t _0x6;
+        int8_t _0x7;
+        int8_t _0x8;
+        int8_t _0x9;
+        int8_t _0xA;
+        int8_t _0xB;
+        int8_t _0xC;
+        int8_t _0xD;
+    public:
+        short FPcost;                                           
+        short R1FP;                                             
+        short R2FP;                                             
+    };
 };

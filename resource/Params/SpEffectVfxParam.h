@@ -2,23 +2,25 @@
 #pragma once
 #include <cstdint>
 struct SpEffectVfxParam {
-    int midstSfxID;
-    int midstSeID;
-    int initSfxID;
-    int InitSeID;
-    int FinishSfxID;
-    int FinishSeID;
-    float camouflageBeginDist;
-    float camouflageEndDist;
-    int transformProtectorID;
-    short midstDmyID;
-    short initDmyID;
-    short FinishDmyID;
-    int8_t EffectType;
-    int8_t SoulParamIDForWepEnchant;
-private:
-public:
-    int8_t soulParamIdForWepEnchant0;
+    static const wchar_t* name;
+    struct data {
+        int midstSfxID;
+        int midstSeID;
+        int initSfxID;
+        int InitSeID;
+        int FinishSfxID;
+        int FinishSeID;
+        float camouflageBeginDist;
+        float camouflageEndDist;
+        int transformProtectorID;
+        short midstDmyID;
+        short initDmyID;
+        short FinishDmyID;
+        int8_t EffectType;
+        int8_t SoulParamIDForWepEnchant;
+    private:
+    public:
+        int8_t soulParamIdForWepEnchant0;
     int8_t PlayCategory;
     int8_t PlayPriority;
     bool ExistEffectForLarge : 1;                          // bit offset +0
@@ -70,4 +72,5 @@ public:
     short BodyProtectorVal;
     short Unk9;
     float CinderIntensityScale;
+    };
 };

@@ -27,15 +27,23 @@ void ParamPatch::paramIndexer() {
 
 void ParamPatch::enumerate() {
     for(const auto& pair : paramTable) {
-        wprintf(L"%ls : 0x%p\n", pair.first.c_str(), pair.second);
+        wprintf(L"\"%ls\" : 0x%p\n", pair.first.c_str(), pair.second);
     }
 }
 
-std::map<int, uintptr_t> ParamPatch::getIdTable(uintptr_t param) {
+std::map<int, uintptr_t> ParamPatch::getIdTable(uintptr_t paramAddress) {
     std::map<int, uintptr_t> idTable;
-    uintptr_t address = *reinterpret_cast<uintptr_t*>(*reinterpret_cast<uintptr_t*>(param + 0x68)+0x68);
-    for(int i = 0; i < *reinterpret_cast<double*>(address + 0xA); ++i) {
-        idTable[*reinterpret_cast<int*>(address + 0x40 + 0x18 * i)] = *reinterpret_cast<int*>(address + 0x40 + 0x18 * i) + address;
+    uintptr_t address = *reinterpret_cast<uintptr_t*>(*reinterpret_cast<uintptr_t*>(paramAddress + 0x68) + 0x68);
+    for(int i = 0; i < *reinterpret_cast<short*>(address + 0xA); i++) {
+        idTable[*reinterpret_cast<int*>(address + 0x40 + 0x18 * i)] = *reinterpret_cast<int*>(address + 0x48 + 0x18 * i) + address;
     }
     return idTable;
+}
+
+uintptr_t ParamPatch::getAddressFromId(uintptr_t paramAddress, int id) {
+    uintptr_t address = *reinterpret_cast<uintptr_t*>(*reinterpret_cast<uintptr_t*>(paramAddress + 0x68) + 0x68);
+    for(int i = 0; i < *reinterpret_cast<short*>(address + 0xA); i++) {
+        if (*reinterpret_cast<int*>(address + 0x40 + 0x18 * i) == id) return *reinterpret_cast<int*>(address + 0x48 + 0x18 * i) + address;
+    }
+    return 0;
 }

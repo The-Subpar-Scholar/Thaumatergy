@@ -2,34 +2,37 @@
 #pragma once
 #include <cstdint>
 struct PhantomParam {
-    float Brightness;
-    float Brightness1;
-    float Brightness2;
-    float Brightness3;
-    float Brightness4;
-    int8_t Red;
-    int8_t Green;
-    int8_t Blue;
-    int8_t Red1;
-    int8_t Green1;
-    int8_t Blue1;
-    int8_t Red2;
-    int8_t Green2;
-    int8_t Blue2;
-    int8_t Red3;
-    int8_t Green3;
-    int8_t Blue3;
-    int8_t Red4;
-    int8_t Green4;
-private:
+    static const wchar_t* name;
+    struct data {                                                   
+        float Brightness;                                       
+        float Brightness1;                                      
+        float Brightness2;                                      
+        float Brightness3;                                      
+        float Brightness4;                                      
+        int8_t Red;                                              
+        int8_t Green;                                            
+        int8_t Blue;                                             
+        int8_t Red1;                                             
+        int8_t Green1;                                           
+        int8_t Blue1;                                            
+        int8_t Red2;                                             
+        int8_t Green2;                                           
+        int8_t Blue2;                                            
+        int8_t Red3;                                             
+        int8_t Green3;                                           
+        int8_t Blue3;                                            
+        int8_t Red4;                                             
+        int8_t Green4;                                           
+    private:
+    public:
+        int8_t Blue4;                                            
+    private:
+        int _0x23;
 public:
-    int8_t Blue4;
-private:
-    int _0x23;
-public:
-    float Fade;
-    float Fade1;
-    int8_t FadeType;
-    int8_t Flag;
-    int8_t Flag1;
+        float Fade;                                             
+        float Fade1;                                            
+        int8_t FadeType;                                         
+        int8_t Flag;                                             
+        int8_t Flag1;                                            
+    };
 };

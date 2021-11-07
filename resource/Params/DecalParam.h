@@ -2,127 +2,130 @@
 #pragma once
 #include <cstdint>
 struct DecalParam {
-    int TextureId;
-    int dmyPolyId;
-    float pitchAngle;
-    float yawAngle;
-    float nearDistance;
-    float farDistance;
-    float nearSize;
-    float farSize;
-    int maskSpEffectId;
-    bool randomVariationNum0 : 1;                          // bit offset +0
-    bool randomVariationNum1 : 1;                          // bit offset +1
-    bool randomVariationNum2 : 1;                          // bit offset +2
-    bool randomVariationNum3 : 1;                          // bit offset +3
-    bool replaceTextureId_byMaterial : 1;                  // bit offset +4
-    bool dmyPolyCategory0 : 1;                             // bit offset +5
-    bool dmyPolyCategory1 : 1;                             // bit offset +6
-    bool decalShapeType0 : 1;                              // bit offset +7
-    bool :0;
-    bool decalShapeType1 : 1;                              // bit offset +0
-    bool decalShapeType2 : 1;                              // bit offset +1
-    bool decalShapeType3 : 1;                              // bit offset +2
-    bool useDeferredDecal : 1;                             // bit offset +3
-    bool usePaintDecal : 1;                                // bit offset +4
-    bool targetAttackChr : 1;                              // bit offset +5
-    bool targetDamageChr : 1;                              // bit offset +6
-    bool targetOtherChr : 1;                               // bit offset +7
-    bool :0;
-    bool targetMapObj : 1;                                 // bit offset +0
-    bool usePom : 1;                                       // bit offset +1
-private:
-    int8_t _0x27;
+    static const wchar_t* name;
+    struct data {                                                   
+        int TextureId;                                        
+        int dmyPolyId;                                        
+        float pitchAngle;                                       
+        float yawAngle;                                         
+        float nearDistance;                                     
+        float farDistance;                                      
+        float nearSize;                                         
+        float farSize;                                          
+        int maskSpEffectId;                                   
+        bool randomVariationNum0 : 1;                          // bit offset +0
+        bool randomVariationNum1 : 1;                          // bit offset +1
+        bool randomVariationNum2 : 1;                          // bit offset +2
+        bool randomVariationNum3 : 1;                          // bit offset +3
+        bool replaceTextureId_byMaterial : 1;                  // bit offset +4
+        bool dmyPolyCategory0 : 1;                             // bit offset +5
+        bool dmyPolyCategory1 : 1;                             // bit offset +6
+        bool decalShapeType0 : 1;                              // bit offset +7
+        bool :0;
+        bool decalShapeType1 : 1;                              // bit offset +0
+        bool decalShapeType2 : 1;                              // bit offset +1
+        bool decalShapeType3 : 1;                              // bit offset +2
+        bool useDeferredDecal : 1;                             // bit offset +3
+        bool usePaintDecal : 1;                                // bit offset +4
+        bool targetAttackChr : 1;                              // bit offset +5
+        bool targetDamageChr : 1;                              // bit offset +6
+        bool targetOtherChr : 1;                               // bit offset +7
+        bool :0;
+        bool targetMapObj : 1;                                 // bit offset +0
+        bool usePom : 1;                                       // bit offset +1
+    private:
+        int8_t _0x27;
 public:
-    short randomSizeMin;
-    short randomSizeMax;
-    float randomRollMin;
-    float randomRollMax;
-    float randomPitchMin;
-    float randomPitchMax;
-    float randomYawMin;
-    float randomYawMax;
-    float pomHeightScale;
-    int8_t pomSampleMin;
-    int8_t pomSampleMax;
-    int8_t Contrast1;
-    int8_t TextureLengthType;
-    float TextureWidthX;
-    float TextureWidthZ;
-private:
-    int8_t _0x54;
-    int8_t _0x55;
-    int8_t _0x56;
-    int8_t _0x57;
-    int8_t _0x58;
-    int8_t _0x59;
-    int8_t _0x5A;
-    int8_t _0x5B;
-    int8_t _0x5C;
-    int8_t _0x5D;
-    int8_t _0x5E;
-    int8_t _0x5F;
+        short randomSizeMin;                                    
+        short randomSizeMax;                                    
+        float randomRollMin;                                    
+        float randomRollMax;                                    
+        float randomPitchMin;                                   
+        float randomPitchMax;                                   
+        float randomYawMin;                                     
+        float randomYawMax;                                     
+        float pomHeightScale;                                   
+        int8_t pomSampleMin;                                     
+        int8_t pomSampleMax;                                     
+        int8_t Contrast1;                                        
+        int8_t TextureLengthType;                                
+        float TextureWidthX;                                    
+        float TextureWidthZ;                                    
+    private:
+        int8_t _0x54;
+        int8_t _0x55;
+        int8_t _0x56;
+        int8_t _0x57;
+        int8_t _0x58;
+        int8_t _0x59;
+        int8_t _0x5A;
+        int8_t _0x5B;
+        int8_t _0x5C;
+        int8_t _0x5D;
+        int8_t _0x5E;
+        int8_t _0x5F;
+    public:
+        float TextureLifeTime;                                  
+    private:
+        int8_t _0x64;
+        int8_t _0x65;
+        int8_t _0x66;
+        int8_t _0x67;
+        int8_t _0x68;
+        int8_t _0x69;
+        int8_t _0x6A;
+        int8_t _0x6B;
+        int8_t _0x6C;
+        int8_t _0x6D;
+        int8_t _0x6E;
+        int8_t _0x6F;
+    public:
+        int TextureId1;                                       
+        int TextureId2;                                       
+        int TextureId3;                                       
+        int Brightness;                                       
+        int TextureId4;                                       
+        int TextureId5;                                       
+        int TextureId6;                                       
+        int8_t R_Diffuse;                                        
+        int8_t G_Diffuse;                                        
+        int8_t B_Diffuse;                                        
+        int8_t UnkNaM;                                           
+        int8_t R_Specular;                                       
+        int8_t G_Specular;                                       
+        int8_t B_Specular;                                       
+        int8_t DelayedSpawnState;                                
+        float Contrast2;                                        
+    private:
+        int8_t _0x98;
+        int8_t _0x99;
+        int8_t _0x9A;
+        int8_t _0x9B;
+        int8_t _0x9C;
+        int8_t _0x9D;
+        int8_t _0x9E;
+        int8_t _0x9F;
+        int8_t _0xA0;
+        int8_t _0xA1;
+        int8_t _0xA2;
+        int8_t _0xA3;
+    public:
+        float minVal;                                           
+        float maxVal;                                           
+    private:
+        short _0xAA;
 public:
-    float TextureLifeTime;
-private:
-    int8_t _0x64;
-    int8_t _0x65;
-    int8_t _0x66;
-    int8_t _0x67;
-    int8_t _0x68;
-    int8_t _0x69;
-    int8_t _0x6A;
-    int8_t _0x6B;
-    int8_t _0x6C;
-    int8_t _0x6D;
-    int8_t _0x6E;
-    int8_t _0x6F;
+        short DecalSpawnDelay;                                  
+    private:
+        bool memBuffer1 : 5;
 public:
-    int TextureId1;
-    int TextureId2;
-    int TextureId3;
-    int Brightness;
-    int TextureId4;
-    int TextureId5;
-    int TextureId6;
-    int8_t R_Diffuse;
-    int8_t G_Diffuse;
-    int8_t B_Diffuse;
-    int8_t UnkNaM;
-    int8_t R_Specular;
-    int8_t G_Specular;
-    int8_t B_Specular;
-    int8_t DelayedSpawnState;
-    float Contrast2;
-private:
-    int8_t _0x98;
-    int8_t _0x99;
-    int8_t _0x9A;
-    int8_t _0x9B;
-    int8_t _0x9C;
-    int8_t _0x9D;
-    int8_t _0x9E;
-    int8_t _0x9F;
-    int8_t _0xA0;
-    int8_t _0xA1;
-    int8_t _0xA2;
-    int8_t _0xA3;
-public:
-    float minVal;
-    float maxVal;
-private:
-    short _0xAA;
-public:
-    short DecalSpawnDelay;
-private:
-    bool memBuffer1 : 5;
-public:
-    bool IsContactPlayer : 1;                              // bit offset +5
-    bool IsFormCube : 1;                                   // bit offset +6
-private:
-    int8_t _0xB1;
-    int8_t _0xB2;
-    int8_t _0xB3;
-public:
-    float TextureSpawnDelay;
+        bool IsContactPlayer : 1;                              // bit offset +5
+        bool IsFormCube : 1;                                   // bit offset +6
+    private:
+        int8_t _0xB1;
+        int8_t _0xB2;
+        int8_t _0xB3;
+    public:
+        float TextureSpawnDelay;                                
+    };
 };

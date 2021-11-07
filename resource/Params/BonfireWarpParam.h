@@ -2,13 +2,16 @@
 #pragma once
 #include <cstdint>
 struct BonfireWarpParam {
-    int LocationEventId;
-    int WarpEventId;
-    int BonfireNameId;
-    int DescriptionTextId;
-    int PictureId;
-    int8_t ListId;
-    int8_t IsDisableQuickwarp;
-    short CeremonyId;
-    int onlineAreaId;
+    static const wchar_t* name;
+    struct data {                                                   
+        int LocationEventId;                                  
+        int WarpEventId;                                      
+        int BonfireNameId;                                    
+        int DescriptionTextId;                                
+        int PictureId;                                        
+        int8_t ListId;                                           
+        int8_t IsDisableQuickwarp;                               
+        short CeremonyId;                                       
+        int onlineAreaId;                                     
+    };
 };

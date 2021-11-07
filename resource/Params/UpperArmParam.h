@@ -2,24 +2,27 @@
 #pragma once
 #include <cstdint>
 struct UpperArmParam {
-    float ArmZ0;
-    float ArmXY0;
-    float ArmZ1;
-    float ArmXY1;
-    float ArmZ2;
-    float ArmXY2;
-    float ArmZ3;
-    float ArmXY3;
-    float ArmZ4;
-    float ArmXY4;
-    float ArmZ5;
-    float ArmXY5;
-    float ArmZ6;
-    float ArmXY6;
-    float ArmZ7;
-    float ArmXY7;
-    float ArmZ8;
-    float ArmXY8;
-    float ArmZ9;
-    float ArmXY9;
+    static const wchar_t* name;
+    struct data {                                                   
+        float ArmZ0;                                            
+        float ArmXY0;                                           
+        float ArmZ1;                                            
+        float ArmXY1;                                           
+        float ArmZ2;                                            
+        float ArmXY2;                                           
+        float ArmZ3;                                            
+        float ArmXY3;                                           
+        float ArmZ4;                                            
+        float ArmXY4;                                           
+        float ArmZ5;                                            
+        float ArmXY5;                                           
+        float ArmZ6;                                            
+        float ArmXY6;                                           
+        float ArmZ7;                                            
+        float ArmXY7;                                           
+        float ArmZ8;                                            
+        float ArmXY8;                                           
+        float ArmZ9;                                            
+        float ArmXY9;                                           
+    };
 };

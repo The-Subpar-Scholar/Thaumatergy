@@ -2,23 +2,26 @@
 #pragma once
 #include <cstdint>
 struct CalcCorrectGraph {
-    float stageMaxVal0;
-    float stageMaxVal1;
-    float stageMaxVal2;
-    float stageMaxVal3;
-    float stageMaxVal4;
-    float stageMaxGrowVal0;
-    float stageMaxGrowVal1;
-    float stageMaxGrowVal2;
-    float stageMaxGrowVal3;
-    float stageMaxGrowVal4;
-    float adjPt_maxGrowVal0;
-    float adjPt_maxGrowVal1;
-    float adjPt_maxGrowVal2;
-    float adjPt_maxGrowVal3;
-    float adjPt_maxGrowVal4;
-    float init_inclination_soul;
-    float adjustment_value;
-    float boundry_inclination_soul;
-    float boundry_value;
+    static const wchar_t* name;
+    struct data {                                                   
+        float stageMaxVal0;                                     
+        float stageMaxVal1;                                     
+        float stageMaxVal2;                                     
+        float stageMaxVal3;                                     
+        float stageMaxVal4;                                     
+        float stageMaxGrowVal0;                                 
+        float stageMaxGrowVal1;                                 
+        float stageMaxGrowVal2;                                 
+        float stageMaxGrowVal3;                                 
+        float stageMaxGrowVal4;                                 
+        float adjPt_maxGrowVal0;                                
+        float adjPt_maxGrowVal1;                                
+        float adjPt_maxGrowVal2;                                
+        float adjPt_maxGrowVal3;                                
+        float adjPt_maxGrowVal4;                                
+        float init_inclination_soul;                            
+        float adjustment_value;                                 
+        float boundry_inclination_soul;                         
+        float boundry_value;                                    
+    };
 };
