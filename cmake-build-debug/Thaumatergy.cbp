@@ -106,6 +106,9 @@
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/WIP/WordChrMan.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/BaseParamClass.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Bases.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
@@ -118,6 +121,9 @@
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/ActionButtonParam.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/AiSoundParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/AtkParam_Npc.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
@@ -127,7 +133,7 @@
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/AttackElementCorrectParam.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
-		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/BehaviorParam_PC.h">
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/BehaviourParam_PC.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/BonfireWarpParam.h">
@@ -179,6 +185,51 @@
 			<Option target="Thaumatergy"/>
 		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/Magic.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/MapMimicryEstablishmentParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/NpcParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/ObjActParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/ObjectParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/PhantomParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/PlayRegionParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/ReinforceParamWeapon.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/RoleParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/ShopLineupParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/SpEffectParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/SpEffectVfxParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/SwordArtsParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/ThrowParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/UpperArmParam.h">
+			<Option target="Thaumatergy"/>
+		</Unit>
+		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/resource/Params/WetAspectParam.h">
 			<Option target="Thaumatergy"/>
 		</Unit>
 		<Unit filename="C:/Users/ojgpr/CLionProjects/Thaumatergy/src/Main.cpp">

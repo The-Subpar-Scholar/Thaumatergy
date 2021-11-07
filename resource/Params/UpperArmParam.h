@@ -21,4 +21,5 @@ struct UpperArmParam {
     float ArmZ8;
     float ArmXY8;
     float ArmZ9;
-    float A
+    float ArmXY9;
+};

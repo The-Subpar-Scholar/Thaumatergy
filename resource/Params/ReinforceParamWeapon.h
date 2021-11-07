@@ -29,7 +29,7 @@ struct ReinforceParamWeapon {
     int8_t ResidentSpEffectId2;
     int8_t ResidentSpEffectId3;
     int8_t materialSetId;
-    int8_t materialSetId;
+    int8_t materialSetId2;
     float darkAtkRate;
     float darkCutRate;
     float StabilityAtkRate;

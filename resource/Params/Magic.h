@@ -88,9 +88,9 @@ private:
     short _0x47;
 public:
     int Spellcastat20Faith;
-    int Spellcastat20Faith;
-    int Spellcastat20Faith;
-    int Spellcastat20Faith;
+    int Spellcastat30Faith;
+    int Spellcastat40Faith;
+    int Spellcastat60Faith;
 private:
     int8_t _0x58;
     int8_t _0x59;
@@ -111,55 +111,4 @@ public:
     int Bullet2;
     int Bullet3;
     int Bullet4;
-private:
-public:
-    int8_t YesNoDialogBox;
-private:
-    int8_t _0x1;
-    int8_t _0x2;
-    int8_t _0x3;
-public:
-    int LimitCancelSpEffectID;
-    short SortID;
-    short ReferenceID;
-    short FPCost;
-    short StaminaCost;
-    short IconID;
-    short BehaviorID;
-    short MaterialItemID;
-    short ReplaceMagicID;
-    short NumberofCasts;
-private:
-    short _0x1A;
-public:
-    int8_t SFXVariation;
-    int8_t SlotsUsed;
-    int8_t RequiredINT;
-    int8_t RequiredFAI;
-    int8_t DexterityMinimumCastSpeedScaling;
-    int8_t DexterityMaximumCastSpeedScaling;
-private:
-    int8_t _0x22;
-public:
-    int8_t ReferenceCategory;
-private:
-    int8_t _0x24;
-public:
-    int8_t CastAnimation;
-    int8_t MenuType;
-private:
-    int8_t _0x27;
-    int8_t _0x28;
-    int8_t _0x29;
-    int8_t _0x2A;
-    int8_t _0x2B;
-    int8_t _0x2C;
-public:
-    bool EnableMulti : 1;                                  // bit offset +0
-    bool EnableMultOnly : 1;                               // bit offset +1
-    bool IsWeaponEnchant : 2;                              // bit offset +2
-    bool EnableHuman : 1;                                  // bit offset +4
-    bool EnableDragonPhantom : 1;                          // bit offset +5
-    bool EnableWhitePhantom : 1;                           // bit offset +6
-    bool EnableBlackPhantom : 1;                           // bit offset +7
 };
