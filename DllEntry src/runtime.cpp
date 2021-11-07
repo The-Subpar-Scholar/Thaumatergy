@@ -7,14 +7,8 @@ bool runtime::_threadHasTerminated = false;
 //perform any necessary setup before starting calling the main thread
 void runtime::threadStartRoutine(){
     Console::CreateConsole();
-    std::cout<<"Console Allocated\n";
-    try {
-        main();
-    }
-    catch (const std::exception& e) {
-        handleCrash(e);
-        return;
-    }
+    ParamPatch::paramIndexer();
+    main();
     restore();
     confirmThreadTermination();
 }

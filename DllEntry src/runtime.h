@@ -3,6 +3,7 @@
 //
 #pragma once
 #include "Console.h"
+#include "ParamPatch.h"
 
 class runtime {
     static bool _requestThreadTermination;

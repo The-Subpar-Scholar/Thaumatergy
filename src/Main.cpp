@@ -4,9 +4,11 @@
 #include "runtime.h"
 #include "address.h"
 #include "Bases.h"
-#include "BaseParamClass.h"
 
 int main() {
+    auto ChaosBedVestiges = newPatch<Bullet>(L"Bullet", 12456000);
+    ChaosBedVestiges->life = 4;
+    ChaosBedVestiges->numShoot = 15;
     while(!runtime::isThreadTerminationRequested()) {
         Sleep(50);
     }
